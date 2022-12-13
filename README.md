@@ -28,3 +28,10 @@ Instead of webpack, <mark>rollup</mark> is used. Typically webpack is used for b
 `rollup.config.js`
 #### Optimizing
 A plugin called <mark>terser</mark> is used to minify bundle and reduce the overall file size.
+#### Testing
+To test components I use React Testing Library, and to run those tests: Jest
+`jest.config.js`
+#### Transpiling
+The bundle tool rollup has its plugin @rollup/plugin-typescript so all good.
+For instructing Jest, a Jest plugin called babel-jest that tells Jest to use Babel to handle JSX transformations. See config at:
+`babel.config.js`
