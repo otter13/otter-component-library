@@ -6,7 +6,8 @@
     "test": "jest",
     "rollup": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "private": false,
   "repository": {
@@ -20,6 +21,7 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
+    "@mdx-js/react": "^2.1.5",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "8.3.0",
@@ -30,6 +32,7 @@
     "@storybook/builder-webpack5": "^6.5.14",
     "@storybook/manager-webpack5": "^6.5.14",
     "@storybook/react": "^6.5.14",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.0.13",
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.2.4",
