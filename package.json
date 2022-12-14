@@ -6,7 +6,7 @@
     "test": "jest",
     "rollup": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs-build -s ./stories/assets"
+    "build-storybook": "build-storybook -o docs-build -s ./src/stories/assets"
   },
   "private": false,
   "repository": {
