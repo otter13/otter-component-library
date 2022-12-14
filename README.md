@@ -95,3 +95,13 @@ The bundle tool rollup has its plugin @rollup/plugin-typescript so all good.
 For instructing Jest, a Jest plugin called babel-jest that tells Jest to use Babel to handle JSX transformations. See config at:
 
 `babel.config.js`
+
+### TODOs
+
+- [x] Storybook
+- [ ] More advanced components
+- [ ] SCSS
+- [ ] Host Storybook on S3
+- [ ] Migrate to Gitlab + CICD
+
+
