@@ -101,7 +101,7 @@ For instructing Jest, a Jest plugin called babel-jest that tells Jest to use Bab
 - [x] Storybook
 - [ ] More advanced components
 - [ ] SCSS
-- [ ] Host Storybook on S3
-- [ ] Migrate to Gitlab + CICD
+- [x] Host Storybook on Github Page
+- [x] Use Github's CICD (Github action)
 
 
