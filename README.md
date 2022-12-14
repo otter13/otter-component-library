@@ -3,7 +3,7 @@ A library of React components which follows HOC pattern, aiming at open for exte
 
 [Figma Design System (WIP)](https://www.figma.com/community/file/1184696002966775031)
 
-[Storybook Demo (WIP)](/)
+[Storybook Demo @ Github Page](https://otter13.github.io/otter-component-library)
 
 [Github](https://github.com/otter13/otter-component-library)
 
@@ -96,11 +96,24 @@ For instructing Jest, a Jest plugin called babel-jest that tells Jest to use Bab
 
 `babel.config.js`
 
+#### Publishing Storybook to Github Page
+I override the default script inserted by Storybook init: `build-storybook`
+
+This will tell Storybook to put the statically generated files into a `docs-build` folder. We don't actually need to create a `docs-build` folder in our repo as it will only be used temporarily for the deployment.
+
+I am triggering the workflow only when files change inside the `stories` and `src/components` folders. You can customize the script accordingly if your stories and/or source files reside in another folder. Alternatively, you can trigger the workflow on every push by setting the `on` section
+
+For more details, see inside `.github\workflows\storybook.yml`. For consistency, `yarn` is used instead of `npm` in the workflow.
+
+The actual deployment is in [github settings](https://github.com/otter13/otter-component-library/settings/pages), which automatically takes `/docs` to deploy to Github Page.
+
 ### TODOs
 
 - [x] Storybook
+- [ ] Figma UX Component Dictionary
 - [ ] More advanced components
 - [ ] SCSS
+- [ ] Automatically publish to NPM / Git module
 - [x] Host Storybook on Github Page
 - [x] Use Github's CICD (Github action)
 
