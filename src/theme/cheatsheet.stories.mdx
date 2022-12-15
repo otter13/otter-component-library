@@ -1,0 +1,34 @@
+import { Canvas, Meta, Story, Props } from '@storybook/addon-docs/blocks'
+import { action } from '@storybook/addon-actions'
+import { linkTo } from '@storybook/addon-links'
+
+import {theme} from "./"
+import {TabBar} from "components/organisms/tabBar"
+
+<Meta title="Theme/Cheatsheet" />
+
+
+<Canvas>
+    <TabBar
+        activateOnHover
+        data={[
+            {
+             value: "border_radius",
+             label: "Border radius",
+             isSelected: true,
+             component: <ul>{Object.keys(theme.borders).map(item  => <li key={item}>{item} => {theme.borders[item]}px</li>)}</ul>,
+            }, 
+            {
+             value: "colours",
+             label: "Colours",
+             component: <ul>{Object.keys(theme.colors).map(item  => <li key={item}>{item} => {theme.colors[item]}px</li>)}</ul>,
+             }, 
+            {
+             value: "spaces",
+             label: "Spaces",
+             component: <ul>{Object.keys(theme.spaces).map(item  => <li key={item}>{item} => {theme.spaces[item]}px</li>)}</ul>,
+            }
+        ]}
+        id="myTab"
+    />
+</Canvas>

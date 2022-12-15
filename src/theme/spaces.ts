@@ -1,0 +1,15 @@
+// Using a 8px base
+export const spaceXXXSmall = 2;
+export const spaceXXSmall = 4;
+export const spaceXSmall = 8;
+export const spaceSmall = 16;
+export const spaceSmallMedium = 20;
+export const spaceMedium = 24;
+export const spaceLargeMedium = 28;
+export const spaceLarge = 32;
+export const spaceXLarge = 48;
+export const spaceXXLarge = 56;
+export const spaceXXXLarge = 64;
+export const spaceXXXXLarge = 128;
+export const contentWrapper = 40;
+export const formRowHeight = 44;

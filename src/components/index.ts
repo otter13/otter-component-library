@@ -1,4 +1,4 @@
 /**
  * Then we export that button from the components directory:
  */
-export { default as Button } from "./Button";
+export { Button } from "./atoms";

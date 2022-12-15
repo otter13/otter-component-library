@@ -97,7 +97,7 @@ For instructing Jest, a Jest plugin called babel-jest that tells Jest to use Bab
 `babel.config.js`
 
 #### Publishing Storybook to Github Page
-I override the default script inserted by Storybook init: `build-storybook`
+I override the default script inserted by Storybook init: `build-storybook`. [Ref](https://dev.to/kouts/deploy-storybook-to-github-pages-3bij#:~:text=Enable%20GitHub%20Pages,docs%20folder%20in%20our%20repository.)
 
 This will tell Storybook to put the statically generated files into a `docs-build` folder. We don't actually need to create a `docs-build` folder in our repo as it will only be used temporarily for the deployment.
 
@@ -105,7 +105,7 @@ I am triggering the workflow only when files change inside the `stories` and `sr
 
 For more details, see inside `.github\workflows\storybook.yml`. For consistency, `yarn` is used instead of `npm` in the workflow.
 
-The actual deployment is in [github settings](https://github.com/otter13/otter-component-library/settings/pages), which automatically takes `/docs` to deploy to Github Page.
+The actual deployment is in [github settings](https://github.com/otter13/otter-component-library/settings/pages), which automatically takes `/docs` to deploy to Github Page (Github Page is an upgrade which costs me $4 / month...).
 
 ### TODOs
 

@@ -1,0 +1,15 @@
+{
+    "type": "node",
+    "request": "launch",
+    "name": "Run tests in current file",
+    "args": [
+       "--inspect",
+       "./node_modules/jest/bin/jest.js",
+       "--runInBand",
+       "${fileBasenameNoExtension}"
+    ],
+    "cwd": "${workspaceFolder}",
+    "protocol": "inspector",
+    "console": "integratedTerminal",
+    "internalConsoleOptions": "neverOpen"
+ }
