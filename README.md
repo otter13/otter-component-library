@@ -1,5 +1,5 @@
 # otter-component-library
-A library of React components which follows HOC pattern, aiming at open for extension.
+A library of React components which follows HOC pattern, aiming at open for extension. For education, exploration and prototype purposes based on React v18.
 
 [Figma Design System (WIP)](https://www.figma.com/community/file/1184696002966775031)
 
